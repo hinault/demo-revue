@@ -31,7 +31,7 @@ namespace Etudiants.MVC.Controllers
         }
 
 
-        [Authorize(Roles ="Administrateur, Test")]
+        [Authorize(Roles ="Administrateur")]
         // GET: EtudiantsController/Create
         public ActionResult Create()
         {
@@ -39,7 +39,7 @@ namespace Etudiants.MVC.Controllers
             return View();
         }
 
-        [Authorize(Roles = "Administrateur, Test")]
+        [Authorize(Roles = "Administrateur")]
         // POST: EtudiantsController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
