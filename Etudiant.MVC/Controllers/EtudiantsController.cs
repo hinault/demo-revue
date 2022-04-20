@@ -23,6 +23,7 @@ namespace Etudiants.MVC.Controllers
         
         public async Task<ActionResult> Index()
         {
+            //Revue de code 
             var etudiants = (await _etudiantsproxy.ObtenirTout()).ToList();
          
             etudiants.ForEach(e => e.NAS = _protector.Unprotect(e.NAS));
