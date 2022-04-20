@@ -38,6 +38,7 @@ namespace Etudiants.MVC.Controllers
             
             return View();
         }
+        //ALLO
         //TEST OLIVIER
         [Authorize(Roles = "Administrateur")]
         // POST: EtudiantsController/Create
